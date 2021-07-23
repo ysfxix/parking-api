@@ -3,13 +3,12 @@ const router = express.Router()
 const User = require('../models/User')
 
 router.post("/", async (req, res) => {
-    const { username, password, email } = req.body // console.log(req.body);
+    const { registrationNumber, password } = req.body // console.log(req.body);
 
     try {
         const user = await User.create({
-            username,
+            registrationNumber,
             password,
-            email
         })
 
         console.log('User created: ', user)

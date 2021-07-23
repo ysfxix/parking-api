@@ -1,11 +1,14 @@
 require('dotenv').config()
 
+const API_BASE_PATH = process.env.PARKING_API_BASE_PATH
+
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 var morgan = require('morgan')
 
 const indexRouter = require("./routes/index")
+const userRouter = require("./routes/user")
 const loginRouter = require("./routes/login")
 const registerRouter = require("./routes/register")
 
@@ -21,12 +24,13 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 
 app.get("/", (req, res) => {
-    res.redirect(301, process.env.PARKING_API_BASE_URL);
+    res.redirect(301, API_BASE_PATH);
 });
 
-app.use(process.env.PARKING_API_BASE_URL, indexRouter)
-app.use(`${process.env.PARKING_API_BASE_URL}/register`, registerRouter)
-app.use(`${process.env.PARKING_API_BASE_URL}/login`, loginRouter)
+app.use(API_BASE_PATH, indexRouter)
+app.use(`${API_BASE_PATH}/register`, registerRouter)
+app.use(`${API_BASE_PATH}/login`, loginRouter)
+app.use(`${API_BASE_PATH}/user`, userRouter)
 
 app.use((req, res, next) => {
     res.status(404).json("404 (Not found)")

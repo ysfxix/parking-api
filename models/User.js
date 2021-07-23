@@ -4,6 +4,19 @@ const bcrypt = require('bcrypt')
 const Schema = mongoose.Schema
 
 const userSchema = new Schema({
+    username: {
+        type: String,
+        required: [true, "Please provide username"],
+        unique: [true, 'This username already exists']
+    },
+    firstName: {
+        type: String,
+        required: [true, "Please provide First name"],
+    },
+    lastName: {
+        type: String,
+        required: [true, "Please provide Last name"],
+    },
     registrationNumber: {
         type: String,
         required: [true, "Please provide Registration number of your car"],

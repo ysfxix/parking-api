@@ -10,6 +10,10 @@ const bookingSchema = new Schema({
         type: Date,
         default: Date.now()
     },
+    dateBookingExpiry: {
+        type: Date,
+        default: Date.now() + (30 * 60000)
+    },
     parkingNumber: {
         type: Number,
         required: [true, "parkingNumber not provided"],

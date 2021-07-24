@@ -9,7 +9,7 @@ var morgan = require('morgan')
 
 const indexRouter = require("./routes/index")
 const userRouter = require("./routes/user")
-const loginRouter = require("./routes/login")
+const bookRouter = require("./routes/book")
 const registerRouter = require("./routes/register")
 
 var bodyParser = require('body-parser')
@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
 
 app.use(API_BASE_PATH, indexRouter)
 app.use(`${API_BASE_PATH}/register`, registerRouter)
-app.use(`${API_BASE_PATH}/login`, loginRouter)
+app.use(`${API_BASE_PATH}/book`, bookRouter)
 app.use(`${API_BASE_PATH}/user`, userRouter)
 
 app.use((req, res, next) => {

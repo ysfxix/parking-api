@@ -26,7 +26,7 @@ router.post("/", async (req, res) => {
         const isMatch = await user.matchPasswords(password)
         // console.log('Password match?: ', isMatch)
 
-        // Password matched! Create a JWT token and send it back
+        // Password matched!
         if (isMatch) {
             let payload = user.toJSON()
             delete payload['password']
@@ -35,22 +35,12 @@ router.post("/", async (req, res) => {
             delete payload['__v']
             // console.log('user', user); // console.log('payload', payload);
 
-            jwt.sign(payload, process.env.JWT_SECRET, (err, token) => {
-                if (err) {
-                    console.log(err.message)
-                    return res.status(500).json({
-                        success: false,
-                        error: err.message
-                    })
-                }
-                else {
-                    console.log(`${user.username} logged in [${Date.now()}]`);
-                    res.status(200).json({
-                        success: true,
-                        token
-                    })
-                }
-            });
+            // TODO: Do a booking for user and allot a parking number
+
+            return res.status(200).json({
+                success: true,
+                parkingNumber: 12
+            })
         }
         else {
             res.status(403).json({

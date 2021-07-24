@@ -9,8 +9,9 @@ const connectDB = async () => {
             useCreateIndex: true
         })
         console.log('Connected to MongoDB')
+        // console.log(db);
     } catch (error) {
-        console.log('Error connecting to MongoDB: ', error.message)
+        console.log('Error connecting to MongoDB (db.js): ', error.message)
     }
 }
 

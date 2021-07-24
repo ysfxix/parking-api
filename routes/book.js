@@ -2,6 +2,7 @@ const express = require("express")
 const router = express.Router()
 // const jwt = require('jsonwebtoken');
 const User = require('../models/User')
+const Booking = require('../models/Booking')
 
 router.post("/", async (req, res) => {
     let { email, password } = req.body; //console.log(req.body);
@@ -35,11 +36,20 @@ router.post("/", async (req, res) => {
             delete payload['__v']
             // console.log('user', user); // console.log('payload', payload);
 
-            // TODO: Do a booking for user and allot a parking number
+            // TODO 1 : Find an empty parking slot
+            // TODO 2 : Do a booking for user  
+
+            let objBooking = {
+                userID: user._id,
+                parkingNumber: 12,
+            }
+            let booking = await Booking.create(objBooking)
+
+            console.log("Booking", booking);
 
             return res.status(200).json({
                 success: true,
-                parkingNumber: 12
+                booking
             })
         }
         else {

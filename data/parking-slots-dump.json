@@ -1,0 +1,482 @@
+[
+  {
+    "parkingNumber": 1,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 2,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 3,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 4,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 5,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 6,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 7,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 8,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 9,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 10,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 11,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 12,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 13,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 14,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 15,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 16,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 17,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 18,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 19,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 20,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 21,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 22,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 23,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 24,
+    "isReserved": 1
+  },
+  {
+    "parkingNumber": 25,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 26,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 27,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 28,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 29,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 30,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 31,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 32,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 33,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 34,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 35,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 36,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 37,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 38,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 39,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 40,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 41,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 42,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 43,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 44,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 45,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 46,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 47,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 48,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 49,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 50,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 51,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 52,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 53,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 54,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 55,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 56,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 57,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 58,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 59,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 60,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 61,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 62,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 63,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 64,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 65,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 66,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 67,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 68,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 69,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 70,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 71,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 72,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 73,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 74,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 75,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 76,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 77,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 78,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 79,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 80,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 81,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 82,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 83,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 84,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 85,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 86,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 87,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 88,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 89,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 90,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 91,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 92,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 93,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 94,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 95,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 96,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 97,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 98,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 99,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 100,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 101,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 102,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 103,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 104,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 105,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 106,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 107,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 108,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 109,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 110,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 111,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 112,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 113,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 114,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 115,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 116,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 117,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 118,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 119,
+    "isReserved": 0
+  },
+  {
+    "parkingNumber": 120,
+    "isReserved": 0
+  }
+]

@@ -13,6 +13,8 @@ const bookRouter = require("./routes/book")
 const registerRouter = require("./routes/register")
 const parkingRouter = require("./routes/parking")
 
+const cancelBooking = require('./middleware/cancelBooking')
+
 var bodyParser = require('body-parser')
 // const auth = require("./middleware/auth")
 const connectDB = require('./db')
@@ -23,6 +25,7 @@ connectDB()
 // app.use(express.json())
 app.use(morgan('dev'))
 app.use(bodyParser.json())
+app.use(cancelBooking)
 
 app.get("/", (req, res) => {
     res.redirect(301, API_BASE_PATH);

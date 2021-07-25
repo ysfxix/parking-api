@@ -30,25 +30,54 @@ router.post("/", async (req, res) => {
 
         // Password matched!
         if (isMatch) {
-            let payload = user.toJSON()
-            delete payload['password']
-            delete payload['dateAdded']
-            delete payload['emailVerified']
-            delete payload['__v']
-            // console.log('user', user); // console.log('payload', payload);
 
-            // TODO 1 : Find an empty parking slot
-            // TODO 2 : Do a booking for user  
+            //  TODO 1: 
+            /*
+            If the user fails to reach parking within 15/30 min then cancel his booking
 
-            // Parking.find({ isReserved: user.userCategory, isBooked: 0 })
+            Find all bookings whose booking expiry date has expired and
+            mark those parking number as available (isBooked = false)
+           */
+
+            // let expiredBookings = await Booking.deleteMany({ dateBookingExpiry: { $lte: new Date() } })
+
+
+            //  TODO 2: [DONE]
+            /*
+             find total number of occupied slots.
+             if total number of occupied slots >= 60  (50%) 
+             then waiting time reduced to 15 mins from 30 mins
+            */
+
+            totalBookedSlots = await Parking.countDocuments({ isBooked: 1 })
+            let bookingExpiryDuration = (totalBookedSlots >= 60) ? 15 : 30
+
+
+
+            //  1 : Find an empty parking slot
+            let availableParkingSlot = await Parking.findOne({ isReserved: user.userCategory, isBooked: 0 })
+            // console.log('availableParkingSlot', availableParkingSlot);
 
             let objBooking = {
                 userID: user._id,
-                parkingNumber: 12,
+                parkingNumber: availableParkingSlot.parkingNumber,
+                dateBookingExpiry: Date.now() + (bookingExpiryDuration * 60000)
             }
-            let booking = await Booking.create(objBooking)
 
-            console.log("Booking", booking);
+            // 2: Do a booking for user 
+            let booking = await Booking.create(objBooking)
+            // console.log("Booking", booking);
+
+            // 3: Mark the slot as booked
+            availableParkingSlot.isBooked = true
+            await availableParkingSlot.save()
+
+
+            // let payloadBooking = {
+            //     parkingNumber: booking.parkingNumber,
+            //     bookingDate: booking.dateBooked,
+            //     expiryDate: booking.dateBookingExpiry
+            // }
 
             return res.status(200).json({
                 success: true,
@@ -56,7 +85,7 @@ router.post("/", async (req, res) => {
             })
         }
         else {
-            res.status(403).json({
+            return res.status(403).json({
                 success: false,
                 error: "Invalid credentials [Password do not match]"
             })

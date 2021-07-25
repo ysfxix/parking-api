@@ -3,7 +3,7 @@ const router = express.Router()
 const User = require('../models/User')
 const Parking = require('../models/Parking')
 
-router.get("/status", async (req, res) => {
+router.get("/", async (req, res) => {
     try {
         let [slotsOccupied, slotsAvailable] = await Promise.all([
             Parking.countDocuments({ isBooked: 1 }),

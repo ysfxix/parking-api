@@ -13,11 +13,11 @@ const ParkingSchema = new Schema({
     },
     isBooked: {
         type: Boolean,
-        default: null
+        default: 0
     },
     isParked: {
         type: Boolean,
-        default: null
+        default: 0
     }
 })
 

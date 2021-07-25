@@ -11,6 +11,7 @@ const indexRouter = require("./routes/index")
 const userRouter = require("./routes/user")
 const bookRouter = require("./routes/book")
 const registerRouter = require("./routes/register")
+const parkingRouter = require("./routes/parking")
 
 var bodyParser = require('body-parser')
 // const auth = require("./middleware/auth")
@@ -31,6 +32,7 @@ app.use(API_BASE_PATH, indexRouter)
 app.use(`${API_BASE_PATH}/register`, registerRouter)
 app.use(`${API_BASE_PATH}/book`, bookRouter)
 app.use(`${API_BASE_PATH}/user`, userRouter)
+app.use(`${API_BASE_PATH}/parking`, parkingRouter)
 
 app.use((req, res, next) => {
     res.status(404).json("404 (Not found)")

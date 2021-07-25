@@ -3,6 +3,7 @@ const router = express.Router()
 // const jwt = require('jsonwebtoken');
 const User = require('../models/User')
 const Booking = require('../models/Booking')
+const Parking = require('../models/Parking')
 
 router.post("/", async (req, res) => {
     let { email, password } = req.body; //console.log(req.body);
@@ -38,6 +39,8 @@ router.post("/", async (req, res) => {
 
             // TODO 1 : Find an empty parking slot
             // TODO 2 : Do a booking for user  
+
+            // Parking.find({ isReserved: user.userCategory, isBooked: 0 })
 
             let objBooking = {
                 userID: user._id,

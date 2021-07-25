@@ -2,7 +2,7 @@ require('dotenv').config({ path: '../.env' })
 
 const connectDB = require('../db')
 const Parking = require('../models/Parking')
-const parkingData = require('../parking-slots-dump.json')
+const parkingData = require('../data/parking-slots-dump.json')
 
 const importData = async () => {
     try {

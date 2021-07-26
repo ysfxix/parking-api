@@ -35,7 +35,7 @@ https://parking-api-test.herokuapp.com/api/v1/
 | GET         | [/users/list](https://parking-api-test.herokuapp.com/api/v1/users/list "/users/list")             | Full list of registered users       |
 | GET         | [/parking](https://parking-api-test.herokuapp.com/api/v1/parking "/parking")                      | Status/Count of Parking slots       |
 | GET         | [/parking/availableslots](https://parking-api-test.herokuapp.com/api/v1/parking/availableslots)   | List of all available parking slots |
-| GET         | [/parking/occupiedslots](https://parking-api-test.herokuapp.com/api/v1/ "/parking/occupiedslots") | List of all occupied parking slots  |
+| GET         | [/parking/occupiedslots](https://parking-api-test.herokuapp.com/api/v1/parking/occupiedslots)     | List of all occupied parking slots  |
 
 <br/>
 

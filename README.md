@@ -4,7 +4,7 @@
 
 <br/>
 
-##Instructions
+## Instructions
 
 1. Install project dependencies
 
@@ -54,7 +54,7 @@ https://parking-api-test.herokuapp.com/api/v1/
 }
 ```
 
-<br/>
+
 #### POST /book
 
 ```json
